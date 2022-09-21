@@ -6,9 +6,7 @@ import { PlayersModule } from './players/players.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(
-      'mongodb+srv://admin:2AnTdwQUSHXghgzY@cluster0.ilp7gts.mongodb.net/tracking?retryWrites=true&w=majority',
-    ),
+    MongooseModule.forRoot('secret'),
     PlayersModule,
     CategoriesModule,
     ChallengesModule,
